@@ -22,6 +22,8 @@ namespace Apishka.Controllers
         public IHttpActionResult GetProduct()
         {
             return Ok(db.Product.ToList().ConvertAll(x=> new ProductModel(x)));
+
+
         }
 
         // GET: api/Products/5
